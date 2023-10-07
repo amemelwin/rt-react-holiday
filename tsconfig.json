@@ -1,14 +1,14 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      // This needs to be mirrored in babel.config.js
+      "@src/*": ["src/*"],
+      "@screens/*": ["src/screens/*"],
+      "@navigations/*": ["src/navigations/*"],
+      "@components/*": ["src/components/*"]
+    }
   },
-  "baseUrl": ".",
-  "paths": {
-    // This needs to be mirrored in babel.config.js
-    "@src/*": ["src/*"],
-    "@screens/*": ["src/screens/*"],
-    "@navigations/*": ["src/navigations/*"],
-    "@conponents/*": ["src/conponents/*"]
-  }
 }

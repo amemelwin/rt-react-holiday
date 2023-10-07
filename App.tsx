@@ -1,8 +1,8 @@
 
-import HomeScreen from "./src/screens/Home/HomeScreen";
+import TabNavigation from "@src/navigations/index";
 
 const App = ()=>{
-  return <HomeScreen />
+  return <TabNavigation/>
 }
 
 export default App;

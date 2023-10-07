@@ -1,10 +1,9 @@
-import DefaultScreen from "../../conponents/DefaultScreen"
-import {Text} from "react-native";
+import DefaultScreen from "../../components/DefaultScreen";
 
 const HomeScreen = ()=>{
 
-    return <DefaultScreen title="Hello Amie!">
-        <Text>How Are you Amie!</Text>
+    return <DefaultScreen title="Home Screen">
+      
     </DefaultScreen>
 }
 
