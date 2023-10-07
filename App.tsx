@@ -1,5 +1,4 @@
-
-import TabNavigation from "@src/navigations/index";
+import TabNavigation from "./src/navigations";
 
 const App = ()=>{
   return <TabNavigation/>

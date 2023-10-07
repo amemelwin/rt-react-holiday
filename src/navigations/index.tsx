@@ -1,8 +1,9 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import HomeScreen from '@src/screens/Home/HomeScreen';
-import SettingScreen from '@src/screens/SettingScreen';
+import HomeScreen from '../screens/Home/HomeScreen';
+import SettingScreen from '../screens/SettingScreen';
 import React from 'react';
+import HomeTabNavigation from './HomeTab/HomeTabNavigation';
 export type RootTabParamList = {
     HOME : undefined;
     SETTING : undefined;
@@ -12,15 +13,17 @@ const TabNavigation = () => {
   return (
     <NavigationContainer>
        <Tab.Navigator>
-       <Tab.Screen
-            name='SETTING'
-            component={SettingScreen}
-        />
         <Tab.Screen 
             name='HOME'
-            component={HomeScreen}
+            component={HomeTabNavigation}
             // component={()=><HomeScreen/>}
         />
+        <Tab.Screen
+            name='SETTING'
+            component={SettingScreen}
+            // component={(some)=><SettingScreen />}
+        />
+       
             
        </Tab.Navigator>
 
