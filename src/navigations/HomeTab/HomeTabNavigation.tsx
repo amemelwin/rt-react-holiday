@@ -1,9 +1,9 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
-import HomeScreen from "../../screens/Home/HomeScreen";
-import DetailScreen from "../../screens/Home/DetailScreen";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootTabParamList } from "..";
+import DetailScreen from "../../screens/Home/DetailScreen";
+import HomeScreen from "../../screens/Home/HomeScreen";
 
 export type HomeTabParamList = {
     HOME: undefined;
